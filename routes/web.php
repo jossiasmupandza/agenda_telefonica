@@ -30,6 +30,10 @@ Route::group(['prefix' => 'teste'],function () {
 
 });
 
+Route::group(['prefix' => 'pessoa'], function () {
+    Route::get('/', 'PessoaController@index');
+});
+
 /*
 Route::get('/teste', function () {
     return view('teste');
