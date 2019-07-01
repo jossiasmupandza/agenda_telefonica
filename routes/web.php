@@ -14,3 +14,23 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::group(['prefix' => 'teste'],function () {
+    Route::get('/', function () {
+        return view('teste');
+    });
+
+    Route::get('/teste2', function () {
+        return view('teste2');
+    });
+
+    Route::get('/teste1', function () {
+        return view('teste1');
+    });
+
+});
+
+/*
+Route::get('/teste', function () {
+    return view('teste');
+});*/
